@@ -1,0 +1,10 @@
+<resources>
+    <!--  字符串资源定义文件  -->
+
+    <string name="app_name">代办事项</string>
+
+    <string name="todo_list_fragment_label">代办列表</string>
+    <string name="add_todo_fragment_label">添加代办事项</string>
+
+    <string name="about_setting">关于我们</string>
+</resources>

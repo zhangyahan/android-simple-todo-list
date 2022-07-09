@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 导航配置页面 -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/TodoListFragment">
+
+    <fragment
+        android:id="@+id/TodoListFragment"
+        android:name="com.example.android_simple_todo_list.TodoListFragment"
+        android:label="@string/todo_list_fragment_label"
+        tools:layout="@layout/fragment_todo_list">
+
+        <!--    定义的动作    -->
+        <action
+            android:id="@+id/action_TodoListFragment_to_AddTodoFragment"
+            app:destination="@id/AddTodoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AddTodoFragment"
+        android:name="com.example.android_simple_todo_list.AddTodoFragment"
+        android:label="@string/add_todo_fragment_label"
+        tools:layout="@layout/fragment_add_todo">
+
+        <!--    定义的动作    -->
+        <action
+            android:id="@+id/action_AddTodoFragment_to_TodoListFragment"
+            app:destination="@id/TodoListFragment" />
+    </fragment>
+</navigation>
